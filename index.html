@@ -2,19 +2,33 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<title>Die Truhe</title>
+<title>Escape Rätsel – Die Truhe</title>
 <style>
 body {
   font-family: serif;
-  font-size:30px;
   padding: 28px;
-  line-height: 1.6;
   background: #faf8f2;
 }
+
+/* Container für das Rätsel */
+#text {
+  font-size: 20px;      /* Textgröße für alle Absätze */
+  line-height: 1.6;
+}
+
+/* Absätze im Text */
+#text p {
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+/* Klickbarer Begin-Text ohne Hervorhebung */
 span.clickable {
-  cursor: pointer;    /* klickbar */
-  color: inherit;     /* normale Textfarbe */
+  cursor: pointer;      /* nur Cursor zeigt Klickbarkeit */
+  color: inherit;       /* gleiche Textfarbe wie restlicher Text */
   text-decoration: none; /* kein Unterstrich */
+  font-weight: normal;   /* gleiche Schriftstärke wie normaler Text */
+  font-size: inherit;    /* gleiche Größe wie umgebender Text */
 }
 </style>
 </head>
@@ -41,7 +55,3 @@ Die Truhe wird ihren Atem anhalten – und sich öffnen.</p>`;
 
 </body>
 </html>
-
-
-
-
