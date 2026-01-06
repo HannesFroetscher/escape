@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Die Truhe</title>
+<style>
+body {
+  font-family: serif;
+  padding: 28px;
+  line-height: 1.6;
+  background: #faf8f2;
+}
+span.clickable {
+  cursor: pointer;    /* klickbar */
+  color: inherit;     /* normale Textfarbe */
+  text-decoration: none; /* kein Unterstrich */
+}
+</style>
+</head>
+<body>
+
+<p id="text">
+Nur wer den wahren Tanz der Zahlen beherrscht, vermag die Truhe zu öffnen.
+Zu <span class="clickable" onclick="begin()">Begin</span> gilt es, aufmerksam nach Unstimmigkeiten Ausschau zu halten –
+und jeden entdeckten Fehler mit einem gezielten Klick zu ahnden.
+</p>
+
+<script>
+function begin() {
+  document.getElementById("text").innerHTML =
+`<p>Beginne dort, wo alles beginnt, beim Zeichen der Leere.</p>
+<p>Drehe dich zweimal gegen den Lauf der Zeit im Kreis, ohne anzuhalten, bis der zweite Umlauf vollendet ist.</p>
+<p>Suche nun jene Zahl, die die Differenz zweier aufeinanderfolgender Quadratzahlen ist, deren größere genau 4^2 ist.</p>
+<p>Wende nun deinen Pfad, und folge dem Lauf der Zeit, bis du wieder bei jener Zahl ankommst, die die Anzahl der verschiedenen echten Teiler der Zahlen 28, 15 und 41 zusammen beschreibt.</p>
+<p>Zuletzt gehst du ein weiteres Mal gegen den Lauf der Zeit, zurück zum Ursprung, dorthin, wo alles begonnen hat.</p>
+<p>Wenn du den Weg richtig gegangen bist, wird ein leises Klicken zu hören sein.<br>
+Die Truhe wird ihren Atem anhalten – und sich öffnen.</p>`;
+}
+</script>
+
+</body>
+</html>
