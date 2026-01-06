@@ -3,32 +3,38 @@
 <head>
 <meta charset="utf-8">
 <title>Escape Rätsel – Die Truhe</title>
+
+<!-- Viewport für mobiles Zoom/Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+
 <style>
 body {
   font-family: serif;
   padding: 28px;
   background: #faf8f2;
+  font-size: 24px;       /* Größere Grundschrift */
+  line-height: 1.8;
 }
 
 /* Container für das Rätsel */
 #text {
-  font-size: 20px;      /* Textgröße für alle Absätze */
-  line-height: 1.6;
+  font-size: 24px;       /* Textgröße für alle Absätze */
+  line-height: 1.8;
 }
 
 /* Absätze im Text */
 #text p {
-  font-size: 20px;
-  margin-bottom: 1em;
+  font-size: 24px;
+  margin-bottom: 1.2em;
 }
 
-/* Klickbarer Begin-Text ohne Hervorhebung */
+/* Klickbarer Begin-Text gleich wie restlicher Text */
 span.clickable {
-  cursor: pointer;      /* nur Cursor zeigt Klickbarkeit */
-  color: inherit;       /* gleiche Textfarbe wie restlicher Text */
-  text-decoration: none; /* kein Unterstrich */
-  font-weight: normal;   /* gleiche Schriftstärke wie normaler Text */
-  font-size: inherit;    /* gleiche Größe wie umgebender Text */
+  cursor: pointer;      /* zeigt Klickbarkeit */
+  color: inherit;       /* gleiche Textfarbe */
+  text-decoration: none;
+  font-weight: normal;
+  font-size: inherit;    /* gleiche Größe wie Rest */
 }
 </style>
 </head>
